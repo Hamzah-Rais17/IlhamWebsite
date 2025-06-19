@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap');
+
+:root {
+    --header-height: 5rem; /* You can adjust this based on your design */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#HomeHeader {
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+    z-index: 10000;
+}
+
+#HomeHeader {
+    transition: background-color 0.3s ease;
+}
+
+#header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex  ;
+    width: 100vw;
+    background-color: #FFFFFF;
+    z-index: 2;
+}
+
+#logoDiv{
+    width: 100%;
+    display: flex;
+    padding-top: 15px;
+    padding-left: 54px;
+    padding-right: 84px;
+    padding-bottom: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: 10%;
+}
+
+#menu {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.menuText{
+    text-decoration: none;
+    color: black;
+    font-size: 1vw;
+    font-weight: 500;
+    font-family: 'Red Hat Display', 'Arial';
+}
+
+.menuText:hover{
+    color: orangered;
+}
+
+#landing_page{
+    position: relative;
+    margin-top: -100px;
+    background-image: url("landing_page.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+}
+
+#landingPageHeading{
+    padding-top:100px;
+    text-decoration: none;
+    color: black;
+    font-size: 8vw;
+    font-weight: 5;
+    font-family: 'BlackChancery', 'Arial';
+    
+}
+
+#landingPageContainer{
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#LandingPageDivider{
+    width: 40%;
+}
+
+#LandingPageText{
+    text-decoration: none;
+    color: #2A2A2A;
+    font-size: 1.4vw;
+    font-weight: 400;
+    font-family: 'Red Hat Display', 'Arial';
+    width: 46vw;
+    text-align: center;
+}
+
+#LandingPageCTAHeading{
+    padding-top: 40px;
+}
+
+#LandingPageCTA{
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CTALogo{
+    width: 50%;
+}
+
+#ourCompanySection{
+    position: relative;
+    display: flex;
+    margin: 0;
+    background-color: #222120;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.corner {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    z-index: 1;
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+}
+
+.top-right {
+    top: 0;
+    right: 0;
+}
+
+.bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+#theCompanyContainer{
+
+}
+
+#theCompanyHeading{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 64px;
+    font-weight: 5;
+    color: #F9F5EE;
+    text-align: center;
+}
+
+#theCompanyDivider{
+    margin-top: 20px;
+}
