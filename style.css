@@ -69,7 +69,7 @@ body {
 #landing_page{
     position: relative;
     margin-top: -100px;
-    background-image: url("landing_page.png");
+    background-image: url("photos/landing_page.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
