@@ -2,15 +2,31 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "images/uploads" # Where uploaded media is stored
-public_folder: "/images/uploads"
+media_folder: "photos"
+public_folder: "/photos"
 
 collections:
-  - name: "pages"
-    label: "Pages"
-    folder: "pages"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "homepage"
+    label: "Homepage"
+    files:
+      - file: "index.html"
+        label: "Main Page"
+        name: "main_page"
+        fields:
+          - { label: "Logo Image", name: "logo", widget: "image" }
+          - { label: "Landing Title", name: "landing_heading", widget: "string" }
+          - { label: "Landing Divider Image", name: "divider", widget: "image" }
+          - { label: "Landing Text", name: "landing_text", widget: "text" }
+          - { label: "CTA Heading", name: "cta_heading", widget: "string" }
+          - label: "CTA Logos"
+            name: "cta_logos"
+            widget: "list"
+            fields:
+              - { label: "Logo Image", name: "img", widget: "image" }
+              - { label: "Link", name: "link", widget: "string" }
+
+          - label: "Company Story"
+            name: "story"
+            widget: "text"
+
+          - { label: "Company Section Image", name: "company_image", widget: "image" }
