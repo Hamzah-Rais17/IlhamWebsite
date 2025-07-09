@@ -1,0 +1,54 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "/uploads"
+public_folder: "/uploads"
+
+site_url: "https://ilhamprototype.netlify.app/"
+
+collections:
+  - name: "index"
+    label: "Homepage"
+    files:
+      - label: "Homepage Content"
+        name: "homepage"
+        file: "index.html"
+        fields:
+          - { label: "Landing Page Heading", name: "landingPageHeading", widget: "string" }
+          - { label: "Landing Page Text", name: "landingPageText", widget: "text" }
+          - { label: "Landing Page CTA Heading", name: "landingPageCTAHeading", widget: "string" }
+          - { label: "Company Heading", name: "theCompanyHeading", widget: "string" }
+          - { label: "Company Text", name: "theCompanyText", widget: "text" }
+          - { label: "Partners Text", name: "ourPartnersText", widget: "text" }
+          - { label: "Footer Text", name: "homeFooterText", widget: "text" }
+
+  - name: "about"
+    label: "About Page"
+    files:
+      - label: "About Content"
+        name: "about"
+        file: "about.html"
+        fields:
+          - { label: "Page Heading", name: "heading", widget: "string" }
+          - { label: "Page Body", name: "body", widget: "markdown" }
+
+  - name: "career"
+    label: "Career Page"
+    files:
+      - label: "Career Content"
+        name: "career"
+        file: "career.html"
+        fields:
+          - { label: "Page Heading", name: "heading", widget: "string" }
+          - { label: "Job Listings", name: "jobs", widget: "list", fields: [{label: "Title", name: "title", widget: "string"}, {label: "Description", name: "description", widget: "text"}] }
+
+  - name: "news"
+    label: "News Page"
+    files:
+      - label: "News Content"
+        name: "news"
+        file: "news.html"
+        fields:
+          - { label: "Page Heading", name: "heading", widget: "string" }
+          - { label: "News Posts", name: "posts", widget: "list", fields: [{label: "Title", name: "title", widget: "string"}, {label: "Content", name: "content", widget: "markdown"}] }
